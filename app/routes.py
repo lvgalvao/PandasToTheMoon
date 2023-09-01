@@ -13,5 +13,5 @@ def index():
             return render_template('index.html', mean=mean, median=median, mode=mode, std=std)
         except ValueError:
             # Em caso de erro, exiba uma mensagem de erro
-            return render_template('index.html', error="Invalid input. Please enter integers.")
+            return render_template('index.html', error="Valores invalidos. Coloque somente inteiros separados por virgula.")
     return render_template('index.html')
