@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PandasToTheMoon</title>
+</head>
+
+<body>
+    <form method="post">
+        <input type="text" name="data" placeholder="Enter numbers separated by commas">
+        <input type="submit">
+    </form>
+    {% if mean %}
+    <p>Mean: {{ mean }}</p>
+    <p>Median: {{ median }}</p>
+    <p>Mode: {{ mode }}</p>
+    <p>Std Dev: {{ std }}</p>
+    {% endif %}
+</body>
+
+</html>
